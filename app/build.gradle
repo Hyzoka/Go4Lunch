@@ -1,0 +1,98 @@
+apply plugin: 'com.android.application'
+
+
+android {
+    compileSdkVersion 30
+
+    defaultConfig {
+        applicationId "com.openclassrooms.go4lunch"
+        minSdkVersion 21
+        targetSdkVersion 30
+        versionCode 1
+        versionName "1.0"
+        multiDexEnabled true
+
+        //api_place "AIzaSyC2fx-wWFzIJ86SZ7Nt1hQdcdtKPxL_xWA"
+        //api_map "AIzaSyCkkiHy-YKKgzSeNWHcuol0GcAvDscjZWA"
+
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+
+        debug{
+            buildConfigField ("String", "PLACE_API", '"AIzaSyC2fx-wWFzIJ86SZ7Nt1hQdcdtKPxL_xWA"')
+            buildConfigField ("String", "MAP_API", '"AIzaSyCkkiHy-YKKgzSeNWHcuol0GcAvDscjZWA"')
+        }
+        release {
+            minifyEnabled false
+            buildConfigField 'String', "ApiKey", PLACE_API_KEY
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+        compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: "libs", include: ["*.jar"])
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
+    implementation 'com.google.android.gms:play-services-maps:17.0.0'
+    implementation 'com.google.firebase:firebase-messaging:21.0.1'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.2'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+
+    //bottom view
+    implementation 'com.android.support:design:30.1.0'
+    implementation 'com.google.android.material:material:1.1.0-alpha10'
+
+    //Map
+    implementation 'com.google.android.gms:play-services-maps:17.0.0'
+    implementation 'com.google.android.libraries.places:places:2.4.0'
+
+    //FIREBASE
+    implementation platform('com.google.firebase:firebase-bom:26.3.0')
+    //FIREBASE UI
+    implementation 'com.firebaseui:firebase-ui-auth:7.1.1'
+    implementation 'com.google.android.gms:play-services-auth:19.0.0'
+
+    // FIRESTORE
+    implementation 'com.google.firebase:firebase-firestore:18.1.0'
+    implementation 'com.firebaseui:firebase-ui-firestore:4.3.1'
+    implementation 'com.firebaseui:firebase-ui-database:4.0.0'
+    implementation 'com.firebaseui:firebase-ui-database:6.2.1'
+    implementation 'com.google.firebase:firebase-database:19.3.1'
+    implementation platform('com.google.firebase:firebase-bom:26.6.0')
+
+
+
+    //MULTIDEX
+    implementation 'com.github.bumptech.glide:glide:4.12.0'
+
+    // FACEBOOK LOGIN SUPPORT
+    implementation 'com.facebook.android:facebook-android-sdk:[4,5)'
+
+    //GLIDE
+    implementation 'jp.wasabeef:glide-transformations:3.3.0'
+    implementation 'com.squareup.picasso:picasso:(insert latest version)'
+
+    // RETROFIT
+    implementation 'com.google.code.gson:gson:2.8.5'
+    implementation 'com.squareup.retrofit2:retrofit:2.4.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.4.0'
+    implementation 'com.squareup.retrofit2:adapter-rxjava2:2.3.0'
+    implementation 'io.reactivex.rxjava2:rxandroid:2.0.1'
+    implementation 'io.reactivex.rxjava2:rxjava:2.1.7'
+
+
+    // Include all the Twitter APIs
+    implementation 'com.twitter.sdk.android:twitter:3.1.1'
+}
+
+apply plugin: 'com.google.gms.google-services'

@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linear_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/buffet2">
+
+
+
+    <!-- IMAGE VIEW GO4LUNCH -->
+    <ImageView
+        android:id="@+id/logo_main"
+        android:layout_width="180dip"
+        android:layout_height="180dip"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="10dp"
+        android:background="@drawable/meal" />
+
+    <!-- TITLE GO4LUNCH -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/app_name"
+        android:textColor="@android:color/white"
+        android:textSize="55sp"
+        android:textStyle="bold" />
+
+    <!-- DESCRIPTION GO4LUNCH -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="13sp"
+        android:text="@string/main_activity_description"
+        android:textAlignment="center"
+        android:textStyle="italic"
+        android:textColor="@android:color/white"
+        android:layout_gravity="center_horizontal"/>
+
+    <!-- BUTTON ALREADY CONNECTED -->
+    <Button
+        android:visibility="gone"
+        android:id="@+id/button_already_connected"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/login_already"
+        android:textColor="#fff"
+        android:textSize="13sp"
+        android:background="@color/orange"
+        android:layout_margin="30dp"
+        android:padding="10dp"/>
+
+    <!-- BUTTON EMAIL -->
+    <Button
+        android:id="@+id/button_login_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/login_email"
+        android:textColor="#fff"
+        android:textSize="13sp"
+        android:background="@drawable/email_button_shate"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_marginTop="10dp"
+        android:layout_marginHorizontal="30dp"
+        android:padding="10dp" />
+
+    <!-- BUTTON FACEBOOK -->
+    <Button
+        android:id="@+id/button_login_facebook"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/login_facebook"
+        android:textColor="#fff"
+        android:textSize="13sp"
+        android:background="@drawable/facebook_button_background"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_marginTop="10dp"
+        android:layout_marginHorizontal="30dp"
+        android:padding="10dp"
+        android:drawableStart="@drawable/facebook" />
+
+
+    <!-- BUTTON GOOGLE -->
+    <Button
+        android:id="@+id/button_login_google"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/login_google"
+        android:textColor="#fff"
+        android:textSize="13sp"
+        android:background="@drawable/google_button_background"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_marginTop="10dp"
+        android:layout_marginHorizontal="30dp"
+        android:padding="10dp"
+        android:drawableStart="@drawable/google"/>
+
+    <!-- BUTTON TWITTER -->
+
+    <!--Twitter Login Button-->
+    <com.twitter.sdk.android.core.identity.TwitterLoginButton
+        android:id="@+id/twitter_login_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginHorizontal="30dp"
+        android:padding="10dp"
+        android:text="@string/login_twitter"
+        android:layout_centerHorizontal="true"/>
+
+    <!-- <Button
+        android:id="@+id/button_login_twitter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/login_twitter"
+        android:textColor="#fff"
+        android:textSize="13sp"
+        android:background="@drawable/twitter_button_background"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_marginTop="10dp"
+        android:layout_marginHorizontal="30dp"
+        android:padding="10dp"/> -->
+
+
+</LinearLayout>

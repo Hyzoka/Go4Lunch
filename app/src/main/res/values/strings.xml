@@ -1,0 +1,99 @@
+<resources>
+    <string name="app_name">Go4Lunch</string>
+
+    <!-- BOTTOM NAVIGATION VIEW -->
+    <string name="bottom_navigation_menu_map">Map</string>
+    <string name="bottom_navigation_menu_list">List View</string>
+    <string name="bottom_navigation_menu_workmate">Workmates</string>
+
+    <!-- NAVIGATION DRAWER -->
+    <string name="username">"nom"</string>
+    <string name="email">"e-mail "</string>
+    <string name="lunch_title">"Mon déjeuner"</string>
+    <string name="chat_title">"Chat"</string>
+    <string name="settings_title">"Paramètres"</string>
+    <string name="logout_title">"Se déconnecter"</string>
+    <string name="info_no_email_found">"Aucune adresse email"</string>
+    <string name="info_no_username_found">"Aucun nom d'utilisateur"</string>
+
+    <!-- RESTAURANT ITEM -->
+    <string name="resto_name">"Nom du resto"</string>
+    <string name="resto_address">"Adresse du resto"</string>
+    <string name="resto_open">"Horaires du resto"</string>
+    <string name="resto_distance">"Distance"</string>
+    <string name="logo_colleagues">"logo nombre de collèques"</string>
+    <string name="resto_number_colleagues">"nombre de collèques</string>
+    <string name="resto_star">"étoile"</string>
+    <string name="resto_photo">"photo du restaurant"</string>
+
+    <!--WORKMATES -->
+    <string name="not_decided_ex" translatable="false">"Gaspard n'a pas encore décidé."</string>
+    <string name="not_decided">" n'a pas encore décidé."</string>
+    <string name="decided">" mange au restaurant: "</string>
+
+    <string name="photo_profile">"photo de profil"</string>
+    <string name="faim">J\'ai faim!</string>
+    <string name="navigation_drawer_open">"Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <!--LISTRESTO -->
+    <string name="no_openinghours">"Les horaires ne sont pas disponibles."</string>
+    <string name="isjoining">" vient!"</string>
+    <string name="open_at">"Ouvre à "</string>
+    <string name="open_until">"Ouvert jusqu'à "</string>
+    <string name="closed">Fermé</string>
+    <string name="closed_today">"Fermé aujourd'hui"</string>
+    <string name="always_open">Ouvert 24/7</string>
+
+    <!--DETAIL -->
+    <string name="call">"Tel"</string>
+    <string name="website">"Site web"</string>
+    <string name="like">"J'aime"</string>
+
+    <!-- PHONE CALL -->
+    <string name="no_phone_number">"Le numéro n'est pas disponible"</string>
+    <string name="no_permission_for_call">"Go4Lunch n'a pas la permission de passer des appels"</string>
+
+    <!-- WEBSITE -->
+    <string name="no_website">"L'adresse du site web n'est pas disponible"</string>
+
+    <!-- LOGIN-->
+    <string name="main_activity_description">Trouve un restaurant sympa pour déjeuner avec tes collègues.</string>
+    <string name="login_facebook">"S'authentifier avec Facebook"</string>
+    <string name="login_twitter">"S'authentifier avec Twitter"</string>
+    <string name="login_google">"S'authentifier avec Google"</string>
+    <string name="login_email">"S'authentifier avec mon email"</string>
+    <string name="login_already">"Commencer"</string><string name="error_not_connected">"Vous devez vous connecter !"</string>
+    <string name="error_authentication_canceled">"Authentification annulée"</string>
+    <string name="error_no_internet">"Aucune connexion internet !"</string>
+    <string name="error_unknown_error">"Une erreur inconnue s'est produite"</string>
+    <string name="connection_succeed">"Authentification réussie !"</string>
+    <string name="button_login_text_logged">"Afficher le profil"</string>
+    <string name="button_login_text_not_logged">"Connexion"</string>
+    <string name="facebook_application_id" translatable="false">"719783335570152"</string>
+    <string name="facebook_login_protocol_scheme" translatable="false">"fb719783335570152"</string>
+
+    <!-- API PLACE-->
+    <string name="place_key" translatable="false">"AIzaSyC2fx-wWFzIJ86SZ7Nt1hQdcdtKPxL_xWA"</string>
+
+    <string name="twitter_consumer_key" translatable="false"> 9YRoOojs8k08JQXCrNHgiaumK </string>
+    <string name="twitter_consumer_secret" translatable="false"> DIdcHjMr6fsZjCRXojasjCvYLRMxKM7WSHPDWU0M1xRH3TRzGa </string>
+
+    <!-- LUNCH ACTIVITY -->
+    <string name="no_lunch">"Vous n'avez pas encore choisi de restaurant!"</string>
+    <string name="error">"Une erreur s'est produite"</string>
+
+    <string name="empty_restaurant_list">Let\'s find where to have lunch !  Go to the map</string>
+    <string name="no_hours">"Les horaires ne sont pas disponibles."</string>
+
+    <!-- TOP BAR NAVIGATION -->
+    <string name="TB_title">"J'ai faim!"</string>
+    <string name="TB_search_text">"Je cherche un resto"</string>
+    <string name="TB_workmates">"Mes collègues"</string>
+    <string name="notifications_onoff">"Souhaitez-vous recevoir une notification à midi vous indiquant les heureux collègues qui se joindront à vous?"</string>
+    <string name="default_notification_channel_id" translatable="false">fcm_default_channel</string>
+    <string name="notification_title" translatable="false">Vous avez reçu une notification</string>
+    <string name="notif_message1" translatable="false">"Aujourd'hui votre pause repas se fera chez: "</string>
+    <string name="notif_message2" translatable="false">"Vous y passerez un bon moment avec:  "</string>
+
+</resources>
